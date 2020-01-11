@@ -9,6 +9,7 @@ const PASSWORD = process.env.MONGO_PASSWORD;
 const uri = `mongodb://${USER}:${PASSWORD}@${HOST}:${PORT}/${DATABASE}`;
 
 const options = {
+  useUnifiedTopology: true,
   useNewUrlParser: true,
 };
 

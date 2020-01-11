@@ -1,5 +1,5 @@
-const UserModel = require('../models/users.model');
-const Cache = require('./cache.repository');
+const UserModel = require('./model');
+const Cache = require('../repositories/cache.repository');
 const { ERR_DUPLICATE_EMAIL } = require('../utils/errorTypes');
 const { LOGIN_EXPIRATION_TIME } = require('../auth/confs');
 

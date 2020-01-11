@@ -1,6 +1,6 @@
-const loginHandler = require('../handlers/login.handler');
-const logoutHandler = require('../handlers/logout.handler');
-const loginSchema = require('../schemas/login.schema');
+const loginHandler = require('./login.handler');
+const logoutHandler = require('./logout.handler');
+const loginSchema = require('./login.schema');
 
 module.exports = [
   {

@@ -1,5 +1,5 @@
 const boom = require('boom');
-const userRepository = require('../repositories/users.repository');
+const userRepository = require('./repository');
 const hash = require('../utils/hash');
 const { ERR_DUPLICATE_EMAIL } = require('../utils/errorTypes');
 

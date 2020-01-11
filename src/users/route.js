@@ -1,5 +1,5 @@
-const userHandler = require('../handlers/users.handler');
-const userSchema = require('../schemas/users.schema.js');
+const userHandler = require('./handler');
+const userSchema = require('./schema.js');
 
 module.exports = [
   {

@@ -1,6 +1,6 @@
 const Token = require('./token.auth');
 const Cache = require('../repositories/cache.repository');
-const { findByEmail } = require('../repositories/users.repository');
+const { findByEmail } = require('../users/repository');
 const { LOGIN_EXPIRATION_TIME, BLACKLIST_CACHE_PREFIX } = require('./confs');
 
 const hash = require('../utils/hash');

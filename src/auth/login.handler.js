@@ -1,6 +1,6 @@
 const boom = require('boom');
-const authenticate = require('../auth/authenticate.auth');
-const userRepository = require('../repositories/users.repository');
+const authenticate = require('./authenticate.auth');
+const userRepository = require('../users/repository');
 
 const {
   ERR_INVALID_PASSWORD,
