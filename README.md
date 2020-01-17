@@ -55,6 +55,18 @@ Para visualizar os logs, é necessário rodar o comando do docker para visualiza
 docker logs -f catalogo-api
 ```
 
+## Endpoints
+
+Cadastrar usuário `POST /users`
+Login `POST /login`
+Logout `POST /logout`
+
+Cadastrar motor brushless `POST /products/brushless_motor`
+Cadastrar bateria `POST /products/battery`
+Cadastrar hélice `POST /products/propeller`
+
+Listar produtos `GET /products`
+
 ## Tecnologias
 * Node
 * HapiJS Framework
