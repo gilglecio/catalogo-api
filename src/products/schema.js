@@ -8,9 +8,11 @@ module.exports = {
   state: Joi.string().required(),
   brand: Joi.string().required(),
   qtdStock: Joi.number().required(),
-  zipcode: Joi.string().min(8).required(),
+  address: {
+    zipcode: Joi.string().min(8).required(),
+  },
   details: Joi.string(),
 
-  seller: Joi.any().forbidden(),
+  user: Joi.any().forbidden(),
   timestamps: Joi.any().forbidden(),
 };

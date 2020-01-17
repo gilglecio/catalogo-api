@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 module.exports = {
   productType: String,
   state: String, // novo, usado ou defeito
@@ -5,7 +7,13 @@ module.exports = {
   brand: String,
   weight: Number,
   qtdStock: Number,
-  seller: String, // id do vendedor
-  cep: Number, // cep da cidade onde onde o produto está,
+  seller: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'User',
+    require: true
+  },
+  address: {
+    zipcode: Number,
+  },
   details: String,
 }

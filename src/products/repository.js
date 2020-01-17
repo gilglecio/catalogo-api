@@ -5,13 +5,13 @@ const PropellerModel = require('./propeller/model');
 const create = async (productData) => {
   switch (productData.productType) {
     case 'BRUSHLESS_MOTOR':
-      return (new BrushlessMotorModel(productData)).save();
+      return BrushlessMotorModel.create(productData);
 
     case 'BATTERY':
-      return (new BatteryModel(productData)).save();
+      return BatteryModel.create(productData);
     
     case 'PROPELLER':
-      return (new PropellerModel(productData)).save();
+      return PropellerModel.create(productData);
   
     default:
       throw new Error('product type not found');
@@ -26,6 +26,7 @@ const getAll = async () => {
   ].filter(r => r.productType).map(r => {
 
     const fields = {
+      user: r.user,
       value: r.value,
       weight: r.weight,
       state: r.state || "N/A"

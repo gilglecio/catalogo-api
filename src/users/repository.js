@@ -16,6 +16,8 @@ const create = async (userData) => {
   return userModel.save();
 };
 
+const getAll = async () => UserModel.find();
+
 const findByEmail = email => (
   UserModel.findOne({ email })
 );
@@ -31,6 +33,7 @@ const removeCache = userId => (
 module.exports = {
   create,
   findByEmail,
+  getAll,
   setCache,
   removeCache,
 };

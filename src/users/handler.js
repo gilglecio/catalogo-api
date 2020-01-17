@@ -22,7 +22,7 @@ const create = async (req, h) => {
   }
 };
 
-const getAll = async () => [];
+const getAll = async () => userRepository.getAll();
 
 module.exports = {
   create,

@@ -15,6 +15,9 @@ const generate = data => (
   })
 );
 
+const decode = token => JWT.decode(token);
+
 module.exports = {
   generate,
+  decode,
 };

@@ -26,10 +26,7 @@ const login = async (email, password) => {
   const JWTData = {
     exp: Math.floor(Date.now() / 1000) + LOGIN_EXPIRATION_TIME,
     sub: user.id,
-    iss: 'catalogo-api',
-    data: {
-      user_id: user.id,
-    },
+    iss: 'catalogo-api'
   };
 
   const token = await Token.generate(JWTData);

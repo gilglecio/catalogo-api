@@ -22,7 +22,7 @@ const BrushlessMotorSchema = new Schema({
     amps: Number,
     watts: Number,
     rpm: Number,
-    trust: Number,
+    thrust: Number,
     efficiency: Number
   }]
 }, {
