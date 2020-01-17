@@ -2,6 +2,7 @@ const Hapi = require('@hapi/hapi');
 
 const authRoutes = require('./auth/route');
 const usersRoutes = require('./users/route');
+const productsRoutes = require('./products/route');
 
 const hapiAuthJwt2 = require('hapi-auth-jwt2');
 const jwtStrategy = require('./auth/strategies/JWT');
@@ -18,6 +19,7 @@ const server = Hapi.server({
 server.route([
   ...authRoutes,
   ...usersRoutes,
+  ...productsRoutes,
 ]);
 
 const initializePlugins = async () => {

@@ -17,7 +17,7 @@ services:
     image: node:10.16-slim
     container_name: "catalogo-api"
     ports:
-      - "3000:3000"
+      - "4032:3000"
     working_dir: "/home/node/app"
     volumes:
       - ./:/home/node/app
