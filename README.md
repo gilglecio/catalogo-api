@@ -2,6 +2,8 @@
 
 API RESTFul da plataforma de catálogo de produtos.
 
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Cat%C3%A1logo&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fgilglecio%2Fcatalogo-api%2Fmaster%2Finsomnia.json)
+
 ## Dependências
 * Node 10.5.3
 * NPM
